@@ -292,7 +292,10 @@ body{
         border-radius: 12px;
         box-shadow: 4px 4px 12px #aaaa;
         margin-left: 118px;
+        margin-bottom: 30px;
+        margin-top: 10px;
       }
+    /*productDescription 1*/
     #productDescription {
         display: none;
         width: 280px;
@@ -302,6 +305,54 @@ body{
         border: 1px solid #afaeae;
         position: absolute;
         top: 150px;
+        margin-left: 90px;
+        margin-top: 30px;
+        transform: translate(-50%);
+        z-index: 100;
+        box-shadow: 4px 4px 12px #00000034;
+    }
+    /*productDescription 2*/
+    #productDescription2 {
+        display: none;
+        width: 280px;
+        height: 300px;
+        padding: 15px;
+        background-color: #ffffff;
+        border: 1px solid #afaeae;
+        position: absolute;
+        top: 470px;
+        margin-left: 90px;
+        margin-top: 30px;
+        transform: translate(-50%);
+        z-index: 100;
+        box-shadow: 4px 4px 12px #00000034;
+    }
+    /*productDescription 3*/
+    #productDescription3 {
+        display: none;
+        width: 280px;
+        height: 300px;
+        padding: 15px;
+        background-color: #ffffff;
+        border: 1px solid #afaeae;
+        position: absolute;
+        top: 789px;
+        margin-left: 90px;
+        margin-top: 30px;
+        transform: translate(-50%);
+        z-index: 100;
+        box-shadow: 4px 4px 12px #00000034;
+    }
+    /*productDescription 4*/
+    #productDescription4 {
+        display: none;
+        width: 280px;
+        height: 300px;
+        padding: 15px;
+        background-color: #ffffff;
+        border: 1px solid #afaeae;
+        position: absolute;
+        top: 1110px;
         margin-left: 90px;
         margin-top: 30px;
         transform: translate(-50%);
@@ -318,6 +369,7 @@ body{
     .p {
         font-size: 13px;
     }
+    /*Botão p 01*/
     #closeBtn {
         background-color: #ff5e5e;
         color: white;
@@ -325,6 +377,36 @@ body{
         border: none;
         cursor: pointer;
         margin-top: -7px;        
+    }
+     /*Botão p 02*/
+    #closeBtn2 {
+        background-color: #ff5e5e;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: -7px;
+        margin-left: 29px;        
+    }
+    /*Botão p 03*/
+     #closeBtn3 {
+        background-color: #ff5e5e;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: -7px;
+        margin-left: 29px;        
+    }
+    /*Botão p 04*/
+      #closeBtn4 {
+        background-color: #ff5e5e;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: -7px;
+        margin-left: 29px;        
     }
 }
 
