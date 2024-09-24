@@ -17,8 +17,7 @@
 /*Body*/
 body{
     color: var(--dark);
-    background: var(--white);
-    
+    background: var(--white);    
 }
 /*Cabeçalho*/
 .cardapio .p-cardapio {
@@ -32,7 +31,7 @@ body{
 }
 .navigation{
     display: flex;
-    position: fixed;
+    position: absolute;
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
@@ -40,7 +39,8 @@ body{
     width: 100%;
     background: var(--white);
     transition: all 0.5s;
-    margin-bottom: -40px;
+    margin-bottom: 0px;
+    margin-top: -20px;
 }
 .navigation .logo{
     color: var(--red);
@@ -49,7 +49,7 @@ body{
 }
 .logo span{
     color: var(--dark);
-    font-size: 22px;
+    font-size: 24px;
 }
 .navigation ul{
     display: flex;
@@ -58,7 +58,7 @@ body{
 }
 .navigation ul li a{
     color: var(--dark);
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
     transition: all 0.5s;
 }
@@ -127,109 +127,123 @@ body{
     width: 125%;
     margin-right: -100px;
     margin-bottom: -75px;
-}*/
-/*Caixas dos produtos*/
-#products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: "Arial";
-    gap:16px;
 }
-#productDescription {
-    display: none;
-    width: 290px;
-    padding: 15px;
-    background-color: #ffffff;
-    border: 1px solid #afaeae;
-    position: absolute;
-    top: 150px;
-    margin-left: 100px;
-    margin-top: -10px;
-    transform: translate(-50%);
-    z-index: 100;
-    height: 330px;
-    box-shadow: 4px 4px 12px #00000034;
-}
-
-#productDescription > img {
-    width: 290px;
-    height: 300px;
-    margin-top: -52px;
-    margin-left: 3px;
-
-}
-
-.h4 {
+/*titles*/
+.title1 {
+    font-size: 40px;
     text-align: center;
-    margin-top: 7px;
-    margin-bottom: 8px;
+    margin: 20px;
+    padding-top: 90px;
 }
-
-.p {
-    text-align: justify;
+.title2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 20px;
+    padding-top: 90px;
 }
-
-#closeBtn {
-    background-color: #ff5e5e;
-    color: white;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: -7px;
-    margin-left: 30px;
-    margin-right: -10px;
-    
+.title3 {
+    font-size: 70px;
+    text-align: center;
+    margin: 20px;
+    padding-top: 90px;
 }
-/*Style index*/
+.title4 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    padding-top: 90px;
+}
+.title5 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    padding-top: 90px;
+}
+/*Produtos (ver catálogo)*/
 
-  .card {
-    background-color: #fff;
-    width: 180px;
-    height: 290px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px #aaaa;
-    margin-left: 70px;
-    margin-top: 0px;
-  }
-  .card img {
-    width: 80%;
-    height: 130px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    margin-left: 19px;
-  }
-  .card div {
+.produtos {
+    margin: 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 4px;
-    height: 50%;
-  }
-  .card h1 {
-    font-size: 1.2rem;
-  }
-  .card h2 {
-    font-size: .9rem;
-    color: #aaaa;
-  }
-  .card button {
-    background-color: #ff5e5e;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
+    gap: 20px; /* Espaçamento entre os produtos */
+}
+
+.produto {
+    background-color: #ffffff; /* Fundo cinza escuro */
+    padding: 20px;
+    border: 1px solid #ffffff; /* Borda branca */
+    border-radius: 9px;
+    text-align: center;
+    color: #ffffff; /* Texto branco */
+    width: 250px; /* Largura fixa para cada produto */
+    box-sizing: border-box; /* Garantir que o padding e bordas não aumentem o tamanho */
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.445);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o conteúdo */
+    width: 190px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+    color: #000000; /* Texto branco */
+}
+
+.produto h4 {
+    margin-top: 10px;
+    color: #0000008e; /* Texto branco */
+}
+
+.produto p {
+    color: #000000; /* Texto branco */
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 4px;
-  }
-  .card button:hover {
-    background-color: #fd4949;
+    margin-bottom: 15px; /* Espaço entre o preço e o botão */
+}
+
+.btn-redirection {
+    background-color: #151A3E; /* Botão preto */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px;
     cursor: pointer;
-  }
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-redirection:hover {
+    background-color: #000000; /* Fundo branco ao passar o mouse */
+    color: #ff4024; /* Texto preto ao passar o mouse */
+}
+/*footer*/
+.rodape p {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+.rodape img {
+    margin-top: 20px;
+    display: inline-block;
+    width: 80px;
+    margin-bottom: -40px;
+}
+.rodape a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.voltar a {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color:  #000;
+    padding: 10px;
+    margin-bottom: -10px;
+}
 /*Responsividade*/
 @media (max-width:800px) {
     .navigation{
@@ -265,7 +279,6 @@ body{
     .nav-item{
         margin: 16px 0;
     }
-    
     .home{
         padding: 100px 2%;
         flex-direction: column;
@@ -284,129 +297,6 @@ body{
         width: 80%;
         margin-top: -70px;
         margin-left: -90px;
-    }
-    .card {
-        background-color: #fff;
-        width: 180px;
-        height: 290px;
-        border-radius: 12px;
-        box-shadow: 4px 4px 12px #aaaa;
-        margin-left: 118px;
-        margin-bottom: 30px;
-        margin-top: 10px;
-      }
-    /*productDescription 1*/
-    #productDescription {
-        display: none;
-        width: 280px;
-        height: 300px;
-        padding: 15px;
-        background-color: #ffffff;
-        border: 1px solid #afaeae;
-        position: absolute;
-        top: 150px;
-        margin-left: 90px;
-        margin-top: 30px;
-        transform: translate(-50%);
-        z-index: 100;
-        box-shadow: 4px 4px 12px #00000034;
-    }
-    /*productDescription 2*/
-    #productDescription2 {
-        display: none;
-        width: 280px;
-        height: 300px;
-        padding: 15px;
-        background-color: #ffffff;
-        border: 1px solid #afaeae;
-        position: absolute;
-        top: 470px;
-        margin-left: 90px;
-        margin-top: 30px;
-        transform: translate(-50%);
-        z-index: 100;
-        box-shadow: 4px 4px 12px #00000034;
-    }
-    /*productDescription 3*/
-    #productDescription3 {
-        display: none;
-        width: 280px;
-        height: 300px;
-        padding: 15px;
-        background-color: #ffffff;
-        border: 1px solid #afaeae;
-        position: absolute;
-        top: 789px;
-        margin-left: 90px;
-        margin-top: 30px;
-        transform: translate(-50%);
-        z-index: 100;
-        box-shadow: 4px 4px 12px #00000034;
-    }
-    /*productDescription 4*/
-    #productDescription4 {
-        display: none;
-        width: 280px;
-        height: 300px;
-        padding: 15px;
-        background-color: #ffffff;
-        border: 1px solid #afaeae;
-        position: absolute;
-        top: 1110px;
-        margin-left: 90px;
-        margin-top: 30px;
-        transform: translate(-50%);
-        z-index: 100;
-        box-shadow: 4px 4px 12px #00000034;
-    }
-    .h4 {
-        text-align: center;
-        margin-top: 7px;
-        margin-bottom: 8px;
-        font-size: 15px;
-    }
-    
-    .p {
-        font-size: 13px;
-    }
-    /*Botão p 01*/
-    #closeBtn {
-        background-color: #ff5e5e;
-        color: white;
-        padding: 5px;
-        border: none;
-        cursor: pointer;
-        margin-top: -7px;        
-    }
-     /*Botão p 02*/
-    #closeBtn2 {
-        background-color: #ff5e5e;
-        color: white;
-        padding: 5px;
-        border: none;
-        cursor: pointer;
-        margin-top: -7px;
-        margin-left: 29px;        
-    }
-    /*Botão p 03*/
-     #closeBtn3 {
-        background-color: #ff5e5e;
-        color: white;
-        padding: 5px;
-        border: none;
-        cursor: pointer;
-        margin-top: -7px;
-        margin-left: 29px;        
-    }
-    /*Botão p 04*/
-      #closeBtn4 {
-        background-color: #ff5e5e;
-        color: white;
-        padding: 5px;
-        border: none;
-        cursor: pointer;
-        margin-top: -7px;
-        margin-left: 29px;        
     }
 }
 
