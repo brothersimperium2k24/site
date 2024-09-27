@@ -99,7 +99,7 @@ body{
     max-width: 37rem;
 }
 .home-text .text-h4{
-    font-size: 1.5rem;
+    font-size: 40px;
     color: #FF4024;
     margin-bottom: 1rem;
 }
@@ -287,10 +287,10 @@ body{
         gap: 5rem;
     }
     .home .text-h4{
-        font-size: 15px;
+        font-size: 25px;
     }
     .home .text-h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 1.8rem;
     }
    .home-img{
